@@ -1,6 +1,6 @@
 # My Eğitim Akademisi Portfolio
 
-Bu ASP.NET Core MVC 5 tabanlı kişisel web uygulaması, yöneticilere içerikleri sorunsuz bir şekilde denetleme ve yönetme imkanı sunan oldukça etkileyici bir dinamik yönetim paneli ile donatılmıştır.
+Bu ASP.NET Core MVC 5 tabanlı kişisel web uygulamasıdır. Dinamik yönetim paneli ile donatılmıştır.
 
 ## Teknolojiler
 
@@ -36,11 +36,10 @@ Bu projede aşağıdaki teknolojiler kullanılmıştır:
 
 
 ---
-
-Bu projenin amacı kullanıcıların web sitesinin içeriğini kolayca yönetmelerini sağlamaktır. Ayrıca, web sitesinin her verisi dinamik bir şekilde listelenir, bu da kullanıcıların içeriklerini anlık olarak güncellemelerine ve yeni içerik eklemelerine olanak sağlar. Bu sayede kullanıcı deneyimini sürekli olarak iyileştirme ve güncel tutma konusunda maksimum esneklik sağlar.
+Projemiz kolayca kullanıma sunulmuştur. Bu web sitesi dinamik bir şekilde listeleniyor böyle olması da kullanıcıların 
+verilerini anlık olarak güncellemelerine ve yeni içerik eklemelerine olanak sağlar.
 
 ## Kurulum
 
 1. Projeyi klonlayın.
 2. SQL Server veritabanı oluşturun ve bağlantı ayarlarını `appsettings.json` dosyasında güncelleyin.
-3. Proje klasöründe terminali açın ve aşağıdaki komutları çalıştırın:
