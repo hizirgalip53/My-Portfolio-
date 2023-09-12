@@ -1,0 +1,42 @@
+﻿<section @model List<PortfolioProjesi.Models.Client>
+         class="w3l-homeblock3" id="clients">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <span class="text">Müşterilerim ve Ortaklarım </span>
+                    <h3 class="title-big">
+                        Müşteriler / Ortaklar ve
+                        <span> İşbirlikleri.</span>
+                    </h3>
+                    <p class="mt-4">
+                        Şuan beraber çalıştığım ortak olduğum arkadaşlarımdan çok memnunum İnşAllah daha uzun süreler
+                        onlarla birlikte çalışmayı düşünüyorum.
+                    </p>
+                    <div class="reward-list mt-5">
+                        <div class="reward-item">
+                            @foreach (var item in Model)
+                            {
+                                <div class="reward-item-photo">
+                                    @item.Deger 
+                                </div>
+                                <div class="reward-item-detail">
+                                    <span class="reward-item-title">
+                                        @item.Baslik
+                                    </span>
+                                    <p class="reward-item-descr">@item.Aciklama</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self text-center mt-lg-0 mt-md-5 mt-4">
+                    <div class="images">
+                        <img src="https://i.hizliresim.com/ax36pxm.jpg" class="img-fluid" alt="" style="height:150px; width:300px" />
+                        <img src="https://i.hizliresim.com/cereah0.jpg" class="img-fluid" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

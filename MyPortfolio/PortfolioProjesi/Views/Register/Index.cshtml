@@ -1,0 +1,154 @@
+﻿    
+@{
+    Layout = null;
+}
+
+<!--A Design by W3layouts
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kaydolma Sayfası</title>
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Course Register Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //custom-theme -->
+    <!-- css files -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="~/Templates/web/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- //css files -->
+
+    <link rel="stylesheet" href="~/Templates/web/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+    @*--------*@
+
+    <script src="~/Templates/ajax.googleapis.com_ajax_libs_jquery_3.6.4_jquery.min.js"></script>
+    <script src="~/Templates/maxcdn.bootstrapcdn.com_bootstrap_3.4.1_js_bootstrap.min.js"></script>
+    <link href="~/Templates/maxcdn.bootstrapcdn.com_bootstrap_3.4.1_css_bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<!-- body starts -->
+<body>
+    <!-- section -->
+    <section class="register">
+        <div class="register-full">
+            <div class="register-left">
+                <div class="register">
+                    <div class="logo">
+                        <a href="#"><span class="fa fa-graduation-cap" aria-hidden="true"></span></a>
+                    </div>
+                    <h1>Yeni Kayıt Sayfası</h1>
+                    <p>
+                        Sağ tarafta yer alan bilgileri eksiksiz doldurup kayıt işleminizi
+                        gerçekleştirebilirsiniz kaydınızın gerçekleşmesi için mail aktivasyonu gerekebilir.
+                    </p>
+                    <div class="content3">
+                        <ul>
+                            <li><a class="" href="/Default/Index/">Ana Sayfa</a></li>
+                            <li><a class="read" href="/Login/Index/">Giriş Yap</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         
+             @*Modal*@ 
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Şartlar ve Koşullar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            1. KULLANIM KOŞULLARININ KABULÜ
+                            Bu Hizmetleri kullanarak, bu Kullanım Koşulları'nı kabul etmiş sayılırsınız. Eğer bu koşulları kabul etmiyorsanız, lütfen Hizmetleri kullanmayın.
+                            2. HİZMETLERİN KULLANIMI
+                            (a) Sizden kaynaklanan yükümlülükler:
+                            i. Hizmetlerimizi yasaları ve düzenlemeleri ihlal etmeden kullanmalısınız.
+                            ii. Hizmetlerimizi başkalarının haklarına saygı göstererek kullanmalısınız.
+
+                            (b) Bizimden kaynaklanan yükümlülükler:
+                            i. Hizmetlerimiz, mevcut haliyle sunulur ve herhangi bir garanti vermeden kullanıma sunulur.
+                            ii. Hizmetlerimizi istediğimiz zaman değiştirme veya sonlandırma hakkımızı saklı tutarız.
+                            
+                            5. DEĞİŞİKLİKLER
+                            Bu Kullanım Koşulları zaman zaman güncellenebilir. Güncellemeleri kontrol etmek sizin sorumluluğunuzdadır. Devam eden kullanımınız, güncellenmiş koşulları kabul ettiğiniz anlamına gelecektir.
+
+                            6. İLETİŞİM
+                            Kullanım Koşulları ile ilgili sorularınız veya endişeleriniz varsa, lütfen bizimle iletişime geçin: [İletişim Bilgileri]
+                            Bu Kullanım Koşulları'nı kabul ederek, Hizmetlerimizi kullanırken bu koşullara uymayı kabul etmiş olursunuz.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                            <button type="button" class="btn btn-primary">Tamam</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-right">
+                <div class="register-in">
+                    <h2><span class="fa fa-pencil"></span><i>Kayıt Formu</i></h2>
+                    <div class="register-form">
+                        <form action="#" method="post">
+                            <div class="fields-grid">
+                                <div class="styled-input agile-styled-input-top">
+                                    <input type="text" name="NameSurname" required="">
+                                    <label>Adınızı Soyadınızı Girin</label>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <input type="email" name="Mail" required="">
+                                    <label>E-Mail Giriniz</label>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <input type="tel" name="Phone" required="">
+                                    <label>Telefon Numarası Giriniz</label>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <input type="text" name="UserName" required="">
+                                    <label>Kullanıcı Adınızı Girin</label>
+                                    <span></span>
+                                </div>
+                                <div class="styled-input">
+                                    <input type="password" name="Password" required="">
+                                    <label>Şifre</label>
+                                    <span></span>
+                                </div>
+                                <div class="clear"> </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox" checked><i></i>Kabul Ediyorum,<a href="#"> </a>
+                                    <a data-toggle="modal" data-target="#exampleModalLong">
+                                        Şartlar ve koşullar
+                                    </a>
+                                </label>
+                            </div>
+                            <input type="submit" value="Kayıt Ol">
+                        </form>
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <!-- copyright -->
+        <p class="agile-copyright">© @DateTime.Now.Year Tüm Hakları Saklıdır | Design by <a href="https://w3layouts.com/" target="_blank">W3layouts</a></p>
+        <!-- //copyright -->
+    </section>
+    <!-- //section -->
+</body>
+<!-- //body ends -->
+</html>

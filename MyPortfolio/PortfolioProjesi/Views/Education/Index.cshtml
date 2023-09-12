@@ -1,0 +1,32 @@
+﻿@model List<PortfolioProjesi.Models.Education>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Eğitim Sayfası</h2>
+<table class=" table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Eğitim Yeri Adı</th>
+        <th>Açıklama</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.EducationID</td>
+            <td>@item.EducationName</td>
+            <td>@item.EducationDescription</td>
+            <td>
+                <a href="/Education/DeleteEducation/@item.EducationID/" class="btn btn-outline-danger" @Url.Action("DeleteEducation", "EducationController", new { id = item.EducationID })
+                   onclick="return confirm('Silmek istediğinize emin misiniz?');">
+                    Sil
+                </a>
+            </td>
+            <td><a href="/Education/UpdateEducation/@item.EducationID/" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Education/AddEducation/" class="btn btn-outline-primary">Eğitim Ekle</a>
+
+

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "AddEducation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Eğitim Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Eğitim Yeri</label>
+    <input type="text" class="form-control" name="EducationName" />
+    <br />
+    <label>Açıklama</label>
+    <textarea class="form-control" rows="5" name="EducationDescription"></textarea>
+    <br />
+    <button class="btn btn-info">Eğitim Ekle</button>
+</form>
+

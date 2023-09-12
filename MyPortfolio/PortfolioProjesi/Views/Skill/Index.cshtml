@@ -1,0 +1,30 @@
+﻿@model List<PortfolioProjesi.Models.Skill>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeteneklerim</h2>
+<table class=" table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Yetenek Adı</th>
+        <th>Yetenek Puanı</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SkillID</td>
+            <td>@item.SkillName</td>
+            <td>@item.SkillValue</td>
+            <td>
+                <a href="/Skill/DeleteSkill/@item.SkillID/" class="btn btn-outline-danger" @Url.Action("DeleteSkill", "SkillController", new { id = item.SkillID })
+                   onclick="return confirm('Silmek istediğinize emin misiniz?');">
+                    Sil
+                </a>
+            </td>
+            <td><a href="/Skill/UpdateSkill/@item.SkillID/" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Skill/AddSkill/" class="btn btn-outline-primary">Eğitim Ekle</a>
